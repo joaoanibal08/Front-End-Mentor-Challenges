@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+   
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 600px;
+}
+
+.community {
+    grid-column: 1/-1; 
+    background-color: white;
+   
+}
+
+.community-title {
+    font-size: 1.4em;
+    color: hsl(218, 21%, 59%);
+    margin: 1.5em 0 0 1.4em;
+}
+
+.community-subtitle {
+    font-size: 1.1em;
+    margin: 1em 0 0 1.8em;
+    color: hsl(71, 73%, 54%);
+} 
+
+.community-text {
+    font-size: .9em;
+    margin: .75em 0 2.5em 2.1em;
+    color: lightslategray;
+    line-height: 1.6; 
+    
+}
+
+.subscription {
+    background-color: hsl(184, 92%, 40%);
+}
+
+.subscription-title {
+    font-size: 1.1em;
+    margin: 1.8em 0 0 1.5em;
+    color: white;
+}
+
+
+.subscription-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8em;
+    color: rgba(229, 239, 245, 0.226);
+    margin: 1em 0 0 2em;
+
+}
+   
+
+.subscription-subtitle span.price {
+    font-size: 2em;
+    color: white;
+ 
+}
+
+.subscription-subtitle span {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: hsla(217, 59%, 81%, 0.986);
+    
+}
+
+.subscription-text {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: white;
+    margin: .8em 0 0 2em;
+}
+
+.subscription-button {
+    display: block;
+    width: 80%;
+    margin: 1.5em 0 1.8em 1.6em;
+    padding: 12px;
+    background-color: rgba(95, 255, 2, 0.808);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13);;
+      
+}
+
+.subscription a {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.why {
+    background-color: hsla(177, 71%, 44%, 0.986);
+}
+
+.why-title {
+    font-size: 1em;
+    margin: 1.8em 0 0 1.5em;;
+    color: white;
+}
+
+.why ul {
+    list-style: none;
+    line-height: 1.6;
+    margin: .7em 0 0 1.5em;
+}
+
+.why li {
+    color: hsl(204, 43%, 93%);
+    font-size: 0.75em;
+}
+
+.attribution { font-size: 11px; text-align: center; 
+margin-top: 2em;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 650px){
+    .wrapper {
+        grid-template-columns: 1fr;
+        margin: 1.5em .6em;
+        width: 400px;
+    }
+
+    .community-title{
+       font-size: 1.2em;
+    }
+
+    .community-subtitle {
+        font-size: .9em;
+       }
+
+    .community-text {
+        margin-right: 15px;
+        font-size: .75em;
+        
+    }
+
+    .subscription-button {
+        width: 80%;
+    }
+
+    .why ul {
+        color: hsl(204, 43%, 93%);
+        font-size: 0.75em;
+        margin-bottom: 1.5em;
+        margin-left: 1.4em;
+        font-size: 1.1em;
+    }
+
+@media screen and (max-width: 450px) {
+   .wrapper {
+    width: 320px;
+   }
+
+   .community-title{
+    font-size: 1.1em;
+ }
+
+ .community-subtitle {
+     font-size: .8em;
+    }
+
+ .community-text {
+     margin-right: 15px;
+     font-size: .75em;
+     
+ }
+
+}
+
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-sedans, .card-sedans a {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+
+}
+
+.card-suvs, .card-suvs a {
+    background-color:  hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+    
+}
+
+.card-luxury, .card-luxury a {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+
+}
+
+.card-sedans, .card-suvs, .card-luxury {
+    padding: 30px;
+}
+
+.img-icon {
+    width: 50px;
+    margin-bottom: 1em;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.2em;
+    margin-bottom: .6em;
+}
+
+.text {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .9em;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    margin-right: 2em;
+}
+
+.button {
+   margin-top: 5em;
+   margin-bottom: 1em;
+   display: inline-block;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 12px 25px;
+}
+
+.button a:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 2em; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 815px) {
+    .wrapper {
+        margin: 1em;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .img-icon {
+        width: 60px;
+    }
+
+    .text {
+        font-size: 1.1em;
+
+    }
+
+    .button {
+        margin-bottom: 1.25em;
+   
+    }
+
+    .button a {
+        padding: 15px 35px;
+        font-size: 1em;
+    }
+
+}

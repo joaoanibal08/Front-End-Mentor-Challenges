@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-size: 14px;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1.2rem;
+}
+
+.card {
+    background-color: hsl(228, 56%, 26%);
+    width: 80%;
+    border-radius: .75rem;
+}
+
+.card-fylo{
+    border-top-right-radius: 5rem;
+    padding: 2.2rem;
+}
+
+.card-fylo-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.icon {
+    background-color: hsl(229, 57%, 11%);
+    padding: .6rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-stats{
+    padding: 2.2rem;
+    position: relative;
+}
+
+.description{
+    color: hsl(243, 100%, 93%);
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    font-size: .75rem;
+    
+}
+
+.description p {
+    text-align: center;
+    /*white-space: nowrap;*/
+}
+
+.description span{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.consumption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 1rem;
+    margin: 1.2rem 0 1rem 0;  
+    padding: 3px;
+}
+
+.progress-bar-color {
+    width: 75%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+    background-image: linear-gradient(90deg, #ffa399, #ff4d97);
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 1rem;
+}
+
+.ball {
+    width: .8rem;
+    height: .8rem;
+    background-color: #dddbff;
+    border-radius: 1rem;
+  }
+
+.text {
+    text-transform: uppercase;
+    color: hsl(243, 100%, 93%);
+    font-weight: 700;
+    font-size: .8rem;
+    margin-top: -8px;
+}
+
+.floating-msg{
+    position: absolute;
+    left: 50%;
+}
+
+.msg {
+    background-color: white;
+    padding: .8rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    left: -50%;
+    position: relative;
+    margin-top: .5rem;
+}
+
+.msg strong {
+    font-size: 2.2rem;
+    color: #0c122c;
+  }
+
+.msg span {
+    color: #848794;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+
+.triangle {
+    display: none;
+  }
+
+.attribution { font-size: 11px; 
+    text-align: center; 
+    margin-top: 1.5em;
+
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+  @media screen and (max-width: 320px){
+
+    .card {
+        width: 70%;
+    }
+
+    .card-fylo img {
+        width: 6rem;
+        
+    }
+
+    .icon {
+        padding: .4rem;
+    }
+
+
+    .icon img  {
+        width: 15px;
+    }
+
+    .floating-msg{
+       width: 120px;
+    }
+
+    .msg strong {
+        font-size: 1.4rem;
+        
+    }
+
+    .msg span {
+        font-size: .6rem;
+    }
+
+  }
+
+  @media screen and (min-width: 620px) {
+
+    body {
+        background-image: url(images/bg-desktop.png);
+        background-size: contain;
+        background-position-y: bottom;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+        width: 850px;
+        margin: 0 2em;
+    }
+
+    .card-fylo {
+        width: 40%;
+    }
+
+    .card-stats {
+        margin-top: 2rem;
+    }
+    
+    .msg {
+        left: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .floating-msg {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        left: unset;
+        right: 3rem;
+        top: -30%;
+    }
+
+    .triangle {
+        display: block;
+        width: 0;
+        height: 0;
+        border-right: 10px solid white;
+        border-top: 10px solid white;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+
+    
+  }
