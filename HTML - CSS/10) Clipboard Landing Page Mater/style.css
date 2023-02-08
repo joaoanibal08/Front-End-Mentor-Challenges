@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.logo-header{
+    width: 5rem;
+    margin-top: 2rem;
+}
+
+header h1{
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: hsl(210, 10%, 33%)
+}
+
+header h3, .snippets h3, .clipboard h3, .workflow h3, .for h3{
+    font-size: .9rem;
+    color: hsl(171, 66%, 44%);
+    font-weight: 400;
+    margin: 1rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+} 
+
+.button-ios, .button-mac{
+    text-decoration: none;
+    padding: .7rem 1.4rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: .9rem;
+    margin: 0 .4rem;
+}
+
+.button-ios {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 3px hsl(171, 68%, 36%);
+}
+
+.button-ios:hover{
+    cursor: pointer;
+    background-color: hsl(171, 66%, 44%, 80%);
+    transition: .3s;
+}
+
+.button-mac{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 3px hsl(233, 71%, 61%);
+}
+
+.button-mac:hover{
+    cursor: pointer;
+    background-color: hsl(233, 100%, 69%, 80%);
+    transition: .3s;
+}
+
+.snippets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.snippets-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    width: 60%;
+}
+
+.snippets h2, .clipboard h2, .workflow h2, .for h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.computer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 85px;
+    margin-top: 2rem;
+    width: 110%;
+    margin-right: 6rem;
+}
+
+.computer img{
+    width: 65%;
+}
+
+.computer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.computer-content-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.computer-content-item p {
+    font-size: .9rem;
+    line-height: 1.8;
+    color: hsl(171, 66%, 44%);
+}
+
+.workflow-title {
+    margin: 5rem;
+}
+
+.clipboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.clipboard img {
+    width: 85%;
+}
+
+.flex-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-item img {
+    width: 30px;
+}
+
+.flex-item h4{
+    font-size: 1.3rem;
+    color: hsl(210, 10%, 33%);
+    margin: 1rem;
+} 
+
+.flex-item p{
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.8;
+    color: hsl(171, 66%, 44%);
+    margin: 0 4rem;
+}
+
+.flex-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8rem;
+}
+
+.for {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.for-btn {
+    margin-bottom: 7.5rem;
+}
+
+footer {
+    background-color:aliceblue;
+    width: 100%;
+   
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 0 4rem;
+    
+
+}
+
+footer img {
+    width: 50px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 1rem;
+    margin-right: 22rem;
+}
+
+.grid-1 p{
+    color: hsl(210, 10%, 33%);
+    font-size: .8rem;
+}
+
+.grid-item-2{
+    grid-column: 1/2;
+}
+
+.grid-item-2:hover {
+    cursor: pointer;
+    color:hsl(212, 15%, 59%);
+    transition: .3s;
+}
+
+.grid-item-3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+}
+
+.grid-item-5{
+    grid-column: 3/-1;
+    grid-row: 1/2;
+}
+
+.flex-3{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.flex-3 img{
+    width: 25px;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .footer-content {
+        justify-content: center;
+    }
+    .grid-1 {
+        margin-left: 3rem;
+    }
+
+    .flex-2 {
+        gap: 2em;
+    }
+
+    .flex-2 img {
+        width: 8rem;
+    }
+
+    .flex-3 {
+        gap: 15px;
+    }
+
+    .flex-3 img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .computer {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem;
+    }
+
+    .computer-content-item h4, .computer-content-item p {
+        text-align: center;
+    }
+
+    .flex-1 p {
+        font-size: 12px;
+
+    }
+
+    .flex-2 img {
+        width: 6rem;
+    }
+   
+    .footer-content {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .grid-1 {
+        margin-left: 18rem;
+        margin: 2rem 0;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .header-btn, .for-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flex-1 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .flex-item img {
+        width: 40px;
+    }
+
+    .flex-item p {
+        font-size: 1rem;
+        margin: 0 6rem;
+    }
+
+    .flex-2 {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .flex-2 img {
+        width: 8rem;
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .logo-header {
+        width: 6rem;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .snippets h2, .clipboard h2, .workflow h2, .for h2{
+        margin: 0 1rem;
+    }
+
+    .snippets-header {
+        width: 100%;
+    }
+
+    .snippets-header h3 {
+        font-size: 14px;
+    }
+
+    .flex-item p {
+        margin: 0 1.5rem;
+    }
+
+    .grid-1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .flex-3 {
+        gap: 40px;
+        margin-left: 20px;
+    }
+
+}
