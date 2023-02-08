@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+    font-family: "Outfit", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+  }
+
+  .card {
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    border-radius: 1rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .header {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .header img {
+    border-radius: 10px;
+  }
+
+  .overlay {
+    background-color: hsl(178, 100%, 50%);
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    border-radius: 1rem;
+    display: none;
+  }
+
+  .view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .header:hover .overlay,
+.header:hover .view {
+  display: block;
+  
+}
+
+  h1 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: .8em;
+  }
+
+  h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .content p {
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+  }
+
+  .eth, .days {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  h4 {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: .9rem;
+  }
+
+  .eth-text {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+  }
+
+  hr {
+    color: hsl(215, 51%, 70%);
+    border-width: 0.5px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .footer img {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  .footer p {
+    color: hsl(215, 51%, 70%);
+    margin-top: 18px;
+    font-weight: 400;
+  }
+
+  span {
+    color: white;
+  }
+
+  span:hover{
+    color: hsl(215, 51%, 70%);
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  @media only screen and (max-width: 375px){
+
+    .card {
+        width: 85%;
+        margin: 0 .5em;
+    }
+
+  }
